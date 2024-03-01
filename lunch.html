@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMROI :เมนูอาหารกลางวัน</title>
+    <link rel="stylesheet" href="filter.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/logo2.png?raw=true" alt="Brand" id="logo" onclick="openwindow('indexlogin.html')">
+        <div class="search-group">
+            <input type="text" id="search">
+            <button id="search_submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="main-button">
+            <button id="filters" onclick="showfilters()">
+                <i class="fa-solid fa-filter">
+                    <div class="filters-box">
+                        <span>อาหารแต่ละภาค</span>
+                        <div class="filters-child">
+                            <div id="mid" onclick="openwindow('pakkang.html')">กลาง</div>
+                            <div id="isan" onclick="openwindow('pakesan.html')">อีสาน</div>
+                            <div id="north"onclick="openwindow('paknort.html')">เหนือ</div>
+                            <div id="south"onclick="openwindow('pakti.html')">ใต้</div>
+                        </div>
+                        <span>ช่วงเวลา</span>
+                        <div class="filters-child">
+                            <div id="morning" onclick="openwindow('morning.html')">อาหารเช้า</div>
+                            <div id="afternoon" onclick="openwindow('lunch.html')">อาหารกลางวัน</div>
+                            <div id="dinner" onclick="openwindow('evening.html')">อาหารเย็น</div>
+                        </div>
+                        <span>ประเภทอาหาร</span>
+                        <div class="filters-child">
+                            <div id="gang" onclick="openwindow('gang.html')">แกง</div>
+                            <div id="pad" onclick="openwindow('put.html')">ผัด</div>
+                            <div id="tom" onclick="openwindow('tom.html')">ต้ม</div>
+                            <div id="toon" onclick="openwindow('tun.html')">ตุ๋น</div>
+                            <div id="neung" onclick="openwindow('nung.html')">นึ่ง</div>
+                            <div id="tod" onclick="openwindow('tod.html')">ทอด</div>
+                            <div id="yum" onclick="openwindow('yum.html')">ยำ</div>
+                        </div>
+                    </div>
+                </i>
+            </button>
+            <button id="user">
+                <i class="fa-solid fa-user"></i>
+                <div id="control-box">
+                    <ul>
+                        <li id="setting" onclick="openwindow('setting.html')">setting<i class="fa-solid fa-gear" style="font-size: 15px;"></i></li>
+                        <li id="logout" onclick="openwindow('index.html')">logout<i class="fa-solid fa-arrow-right-from-bracket" style="font-size: 15px;"></i></li>
+                    </ul>
+                </div>
+            </button>  
+        </div>
+    </header>
+    <!-- Header End -->
+    <div class="head_text">
+        <hr style="width: 100% ;">
+        <h2>เมนูอาหารแต่ละช่วงเวลา</h2><p></p><h4>เมนู "อาหารแต่ละช่วงเวลา" ที่เป็นที่นิยม</h4>
+    </div>
+
+
+    <!-- Content -->
+    <div class="all-content">
+        <div class="content-text">
+            <h2>เมนูอาหารแต่ละช่วงเวลา</h2>
+            <div>
+                <h4 onclick="showcontent('content1')" id="main-text-content1">เมนูอาหารเช้า</h4>
+                <h4 onclick="showcontent('content2')" id="main-text-content2">เมนูอาหารกลางวัน</h4>
+                <h4 onclick="showcontent('content3')" id="main-text-content3">เมนูอาหารเย็น</h4>
+                
+            </div>
+            <hr>
+        </div>
+        <div class="content-box">
+
+            <!-- Content 1 -->
+            <div class="content2 content" onclick="openwindow('kawmunkai.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu1.jpg?raw=true" alt="ข้าวมันไก่">
+                <h3 style="font-family: 'Mali', cursive;">ข้าวมันไก่</h3>
+            </div>
+
+            <!-- Content 2 -->
+            <div class="content2 content" onclick="openwindow('kawkai.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu2.jpg?raw=true" alt="ข้าวหมกไก่">
+                <h3 style="font-family: 'Mali', cursive;">ข้าวหมกไก่</h3>
+            </div>
+
+            <!-- Content 3 -->
+            <div class="content2 content" onclick="openwindow('kapoa.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu3.jpg?raw=true" alt="ข้าวกะเพราหมูสับไข่ดาว">
+                <h3 style="font-family: 'Mali', cursive;">ข้าวกะเพราหมูสับไข่ดาว</h3>
+            </div>
+
+            <!-- Content 4 -->
+            <div class="content1 content" onclick="openwindow('kawputgung.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu4.png?raw=true" alt="ข้าวผัดกุ้ง">
+                <h3 style="font-family: 'Mali', cursive;">ข้าวผัดกุ้ง</h3>
+            </div>
+        
+            <!-- Content 5 -->
+            <div class="content2 content" onclick="openwindow('kawkamoo.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu5.jpg?raw=true" alt="ข้าวขาหมู">
+                <h3 style="font-family: 'Mali', cursive;">ข้าวขาหมู</h3>
+            </div>
+        
+            <!-- Content 6 -->
+            <div class="content3 content" onclick="openwindow('kawkuk.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu6.jpg?raw=true" alt="ข้าวคลุกกะปิ">
+                <h3 style="font-family: 'Mali', cursive;">ข้าวคลุกกะปิ</h3>
+            </div>
+        
+            <!-- Content 7 -->
+            <div class="content3 content" onclick="openwindow('teaw.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu7.jpg?raw=true" alt="ก๋วยเตี๋ยวไก่มะระ">
+                <h3 style="font-family: 'Mali', cursive;">ก๋วยเตี๋ยวไก่มะระ</h3>
+            </div>
+        
+            <!-- Content 8 -->
+            <div class="content3 content" onclick="openwindow('kaitod.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu8.jpg?raw=true" alt="ไก่ทอดสมุนไพร">
+                <h3 style="font-family: 'Mali', cursive;">ไก่ทอดสมุนไพร</h3>
+            </div>
+        
+            <!-- Content 9 -->
+            <div class="content3 content" onclick="openwindow('namm.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu10.jpg?raw=true" alt="แหนมเนือง">
+                <h3 style="font-family: 'Mali', cursive;">แหนมเนือง</h3>
+            </div>
+        
+            <!-- Content 10 -->
+            <div class="content2 content" onclick="openwindow('hungle.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu11.jpg?raw=true" alt="แกงฮังเล">
+                <h3 style="font-family: 'Mali', cursive;">แกงฮังเล</h3>
+            </div>
+        
+            <!-- Content 11 -->
+            <div class="content2 content" onclick="openwindow('kaikamin.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu12.jpg?raw=true" alt="ไก่ผัดขมิ้น">
+                <h3 style="font-family: 'Mali', cursive;">ไก่ผัดขมิ้น</h3>
+            </div>
+        
+            <!-- Content 12 -->
+            <div class="content1 content" onclick="openwindow('tungtong.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu13.jpg?raw=true" alt="ถุงทอง">
+                <h3 style="font-family: 'Mali', cursive;">ถุงทอง</h3>
+            </div>
+        
+            <!-- Content 13 -->
+            <div class="content1 content" onclick="openwindow('moosarong.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu14.jpg?raw=true" alt="หมูสโล่ง">
+                <h3 style="font-family: 'Mali', cursive;">หมูสโล่ง</h3>
+            </div>
+        
+            <!-- Content 14 -->
+            <div class="content3 content" onclick="openwindow('hoykang.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu15.jpg?raw=true" alt="หอยแครงลวก">
+                <h3 style="font-family: 'Mali', cursive;">หอยแครงลวก</h3>
+            </div>
+        
+            <!-- Content 15 -->
+            <div class="content1 content" onclick="openwindow('porpeai.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu16.jpg?raw=true" alt="ปอเปี๊ยทอด">
+                <h3 style="font-family: 'Mali', cursive;">ปอเปี๊ยทอด</h3>
+            </div>
+        
+            <!-- Content 16 -->
+            <div class="content1 content" onclick="openwindow('kawtom.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu17.jpg?raw=true" alt="ข้าวต้ม">
+                <h3 style="font-family: 'Mali', cursive;">ข้าวต้ม</h3>
+            </div>
+        
+            <!-- Content 17 -->
+            <div class="content3 content" onclick="openwindow('praradprik.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu18.jpg?raw=true" alt="ปลาราดพริก">
+                <h3 style="font-family: 'Mali', cursive;">ปลาราดพริก</h3>
+            </div>
+        
+            <!-- Content 18 -->
+            <div class="content1 content" onclick="openwindow('gangkeaw.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu19.jpg?raw=true" alt="แกงเขียวหวาน">
+                <h3 style="font-family: 'Mali', cursive;">แกงเขียวหวาน</h3>
+            </div>
+        
+            <!-- Content 19 -->
+            <div class="content2 content" onclick="openwindow('tomyumgung.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu20.jpg?raw=true" alt="ต้มยำกุ้ง">
+                <h3 style="font-family: 'Mali', cursive;">ต้มยำกุ้ง</h3>
+            </div>
+        
+            <!-- Content 20 -->
+            <div class="content3 content" onclick="openwindow('puttai.html')">
+                <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu21.jpg?raw=true" alt="ผัดไทย">
+                <h3 style="font-family: 'Mali', cursive;">ผัดไทย</h3>
+            </div>
+        </div>
+    </div>
+    <div class="content-button" onclick="openwindow('indexlogin.html')">
+        <div class="content-button-background">
+           <div class="content-button-box">
+            <h5 style="font-family: 'Mali', cursive;">ดูรายการแนะนำและเมนูประจำสัปดาห์</h5>
+           </div>
+        </div>
+    </div>
+    <!-- Content End -->
+
+    <!-- footer -->
+    <footer>
+        <div class="left_footer">
+            <div id="location_box" onclick="openwindow('https://maps.app.goo.gl/3cPiz3temsYjUGEb7')">
+                <div><i class="fa-solid fa-location-dot"></i></div>
+                <span>19 ตำบลแม่กา <br>อำเภอเมืองพะเยา พะเยา 56000</span>
+            </div>
+            <div id="tel_box" onclick="openwindow('https://www.up.ac.th/')">
+                <div><i class="fa-solid fa-phone"></i></div>
+                <span>054 466 666</span>
+            </div>
+            <div id="email_box" onclick="openwindow('https://www.up.ac.th/')">
+                <div><i class="fa-regular fa-envelope"></i></div>
+                <span>support@up.ac.th</span>
+            </div>
+        </div>
+        <div class="Rigth_footer">
+            <div>
+                <h3>About the company</h3>
+                <p>เว็ปไซต์ที่แนะนำเมนูอาหารที่หลากหลายมากมาย<br>เหมาะสำหรับนิสิตและบุคคลทั่วไปที่พักอยู่ที่หอ<br>ต้องการที่จะทำอาหารรัปทานเองได้ง่ายๆแนะนำ<br>เว็บไวต์TAMROIที่จะช่วยให้ได้เมนูอาหารที่น่าสนใจ</p>
+                <hr>
+                <div class="contact">
+                    <div><i class="fa-brands fa-facebook"></i></div>
+                    <div><i class="fa-brands fa-x-twitter"></i></div>
+                    <div><i class="fa-brands fa-line"></i></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer End -->
+    <script>
+        
+        window.onload = function() {
+            showcontent('content2');
+        };
+    </script>
+    <script src="index.js"></script>
+
+</body>
+</html>

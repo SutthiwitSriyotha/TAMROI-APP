@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* font-family: 'Roboto', sans-serif;; */
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+/* font-family: 'Itim', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap'); 
+/* font-family: 'Mali', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;;
+}
+.all_setting{
+    display: flex;
+}
+
+.setting_menu{
+    width: 350px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    height: 100lvh;
+}
+.back_home{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.setting_button{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.setting_button ul{
+    list-style: none;
+    
+}
+.setting_button ul li{
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 900;
+    transition: 0.3s;
+    width: 290px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+    border-radius: 7px;
+}
+.setting_button ul li:hover{
+    background-color: #EDF0F2;
+}
+.account_setting{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-weight: 900;
+}
+.Profile_head{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.hr{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 920px;
+    opacity: 0.5;
+}
+
+.choose_photo{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    background-color: #EDF0F2;
+    border-radius: 50%;
+    border: 1px rgb(196, 196, 196) solid;
+}
+
+.Picture_text ul{
+    list-style: none;
+    margin-left: 20px;
+}
+.Picture_text ul li{
+    font-weight: 900;
+}
+.Picture_text input{
+    display: none;
+}
+.Picture_text button{
+    margin-left: 20px;
+    margin-top: 10px;
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 7px;
+    padding-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #383838;
+}
+.user_data{
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.user_data div{
+    display: flex;
+    align-items: center;
+}
+.user_data input{
+    outline: none;
+    border: none;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.user_data input[value]{
+    opacity: 0.5;
+}
+
+#username_data{
+    position: relative;
+}
+
+#pencil1{
+    position: absolute;
+    Top: 410px;
+    left: 780px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+#email_data{
+    position: relative;
+}
+#pencil2{
+    position: absolute;
+    Top: 410px;
+    left: 1165px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.Password_head{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.userpassword_data{
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+}
+.userpassword_data div{
+    display: flex;
+    flex-direction: column;
+}
+.userpassword_data div a{
+    margin-left: 210px;
+    margin-top: 20px;
+}
+.userpassword_data input{
+    outline: none;
+    border: none;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    width: 500px;
+    height: 50px;
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.userpassword_data input[value]{
+    opacity: 0.5;
+}
+#userpassword_data{
+    position: relative;
+}
+
+#pencil3{
+    position: absolute;
+    Top: 225px;
+    left: 890px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#confirm_button{
+    margin-top: 15px;
+    width: 200px;
+    height: 40px;
+    margin-left: 170px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(59, 121, 255);
+}
+#confirm_button2{
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(59, 121, 255);
+}
+#cancel_button{
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+#confirm_button:hover{
+    background-color: rgb(13, 89, 255);
+}
+#confirm_button2:hover{
+    background-color: rgb(13, 89, 255);
+}
+.Favorites_head{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.Favorites_menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 20px;
+}
+.content{
+    width: 230px;
+    background-color: #EDF0F2;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.content img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+
+.detail_setting{
+    display: block;
+}
+.detial_setting2{
+    display: none;
+}
+.detial_setting3{
+    display: none;
+}
+#confirm_password{
+    display: none;
+}
+#newfirm_password{
+    display: none;
+}
+#newfirm_text{
+    display: none;
+}
+#confirm_text{
+    display: none;
+}
+#confirm_button{
+    display: none;
+}
+
+#box_confirm{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    display: none;
+}

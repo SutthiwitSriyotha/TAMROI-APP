@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="setting.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="all_setting">
+        <div class="setting_menu">
+            <div class="back_home" onclick="openwindow('indexlogin.html')">
+                <i class="fa-solid fa-angle-left" style="font-size: 15px;"></i>
+                <h3 style="margin-left: 20px;">Setting</h3>
+            </div>
+            <div class="setting_button">
+                <div class="setting_button">
+                    <ul>
+                        <li id="profile_button">Profile</li>
+                        <li id="password_button" style="margin-top: 10px; color: #6A6A6A;">Password</li>
+                        <li id="favorite_button" style="margin-top: 10px; color: #6A6A6A;">Favorites</li>
+                    </ul>
+                </div>
+                    
+            </div>
+        </div>
+        <div class="detail_setting" id="detail_setting">
+            <div class="account_setting">
+                <span style="color: #6A6A6A;">Account settings</span>
+                <span style="margin-left: 5px; margin-right: 5px;color: #6A6A6A;">/</span>
+                <span id="main_text">Profile</span>
+            </div>
+            <div class="Profile_head">
+                <h1>Profile</h1>
+                <span style="color: #6A6A6A;font-weight: 900;">Manage settings for your pofile</span>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="choose_photo">
+                <div class="logo">
+                    <img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" alt="picture" id="logo">
+                </div>
+                <div class="Picture_text">
+                    <ul>
+                        <li style="font-size: 20px;">Profile picture</li>
+                        <li style="font-size: 15px; color: #6A6A6A;margin-top: 10px;">We support PNGs,JPEGs</li>
+                    </ul>
+                    <input type="file" name="fileToUpload" id="fileToUpload" accept=".jpeg, .jpg, .png">
+                    <button id="upload"><i class="fa-solid fa-arrow-up-from-bracket" style="margin-right: 10px;margin-left: 10px"></i>Upload File</button>
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="user_data">
+                <div>
+                    <label style="font-weight: 900;font-size: 20px;">Username </label>
+                    <input type="text" value="usertest" readonly id="username_data">
+                
+                    <label style="font-weight: 900;font-size: 20px;margin-top: 10px; margin-left: 20px;">Email </label>
+                    <input type="text" value="Email" readonly id="email_data">
+
+                </div>
+                <div id="box_confirm">
+                    <label style="font-weight: 900;font-size: 20px;">Password confirm </label>
+                    <input type="password" id="userpassword_confirm" style="width: 350px;">
+                    <button id="cancel_button">cancel</button>
+                    <button id="confirm_button2">confirm</button>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Password -->
+        <div class="detial_setting2" id="detial_setting2">
+            <div class="account_setting">
+                <span style="color: #6A6A6A;">Account settings</span>
+                <span style="margin-left: 5px; margin-right: 5px;color: #6A6A6A;">/</span>
+                <span id="main_text2">Profile</span>
+            </div>
+            <div class="Password_head">
+                <h1>Password</h1>
+                <span style="color: #6A6A6A;font-weight: 900;">Manage settings for your pofile password</span>
+            </div>
+            
+            <div class="userpassword_data">
+                <div>
+                    <label style="font-weight: 900;font-size: 20px;" id="password_text">Password </label>
+                    <input type="password" value="usertest" readonly id="userpassword_data">
+                   
+                    <label style="font-weight: 900;font-size: 20px;margin-top: 10px;" id="newfirm_text">New Password </label>
+                    <input type="password"   id="newfirm_password">
+
+
+                    <label style="font-weight: 900;font-size: 20px;margin-top: 10px;" id="confirm_text">Confirm Password </label>
+                    <input type="password"   id="confirm_password">
+                    <button id="confirm_button">confirm</button>
+                    <a href="Forgot_password.html" id="forgot">Change password?</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="detial_setting3" id="detial_setting3">
+            <div class="account_setting">
+                <span style="color: #6A6A6A;">Account settings</span>
+                <span style="margin-left: 5px; margin-right: 5px;color: #6A6A6A;">/</span>
+                <span id="main_text3">Profile</span>
+            </div>
+            <div class="Favorites_head">
+                <h1>Favorites</h1>
+            </div>
+            <div class="Favorites_menu">
+                <div onclick="openwindow('kawmunkai.html')" class="content">
+                    <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu1.jpg?raw=true" alt="ข้าวมันไก่">
+                    <h3 style="font-family: 'Mali', cursive;">ข้าวมันไก่</h3>
+                </div>
+                <div onclick="openwindow()" class="content">
+                    <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu2.jpg?raw=true" alt="ข้าวหมกไก่">
+                    <h3 style="font-family: 'Mali', cursive;">ข้าวหมกไก่</h3>
+                </div>
+            </div>
+        </div>
+        <script src="setting.js"></script>
+    </div>
+    
+</body>
+
+</html>

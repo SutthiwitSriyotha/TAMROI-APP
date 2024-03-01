@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigh UP</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="sighup.css">
+</head>
+<body>
+    <form>
+        <h3>Sigh UP</h3>
+        <div class="box-input">
+            <input type="text" placeholder="Email" id="email">
+            <input type="text" placeholder="Username (ต้องมีความยาวอย่างน้อย 6 ตัวขึ้นไป)" id="username">
+            <div>
+                <input type="password" placeholder="Password (ต้องมีรหัสผ่าน 8 ตัวขึ้นไป มีทั้งตัวเลขและตัวอักษร)" id="password">
+                <i class="fa-solid fa-eye" id="openeye"></i>
+                <i class="fa-solid fa-eye-slash" id="closeeye"></i>
+            </div>
+            <button type="button" onclick="createdata()">Sigh up</button>
+            <span style="color: #808B96;">have an account?<a href="Login.html" id="Sigh-up">Log in</a></span>
+        </div>
+        <hr>
+        <div class="logo">
+            <button type="button" id="facebook"><i class="fa-brands fa-facebook"><span  style="color: white; font-family: 'Roboto', sans-serif; ">Log in with Facebook</span></i></button>
+            <button type="button" id="google" onmousemove="onmouseGG()" onmouseleave="onmouseleaveGG()"><i class="fa-brands fa-google"><span id="span-gg">Log in with Google</span></i></button>
+        </div>
+    </form>
+    <script src="sighup.js"></script>
+</body>
+</html>

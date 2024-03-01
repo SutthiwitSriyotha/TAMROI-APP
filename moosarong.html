@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMROI : หมูสโล่ง</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body onload="getimage()">
+    <header>
+        <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/logo2.png?raw=true" alt="Brand" id="logo" onclick="openwindow('indexlogin.html')">
+        <div class="search-group">
+            <input type="text">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="main-button">
+            <button id="filters" onclick="showfilters()">
+                <i class="fa-solid fa-filter">
+                    <div class="filters-box">
+                        <span>อาหารแต่ละภาค</span>
+                        <div class="filters-child">
+                            <div id="mid" onclick="openwindow('pakkang.html')">กลาง</div>
+                            <div id="isan" onclick="openwindow('pakesan.html')">อีสาน</div>
+                            <div id="north"onclick="openwindow('paknort.html')">เหนือ</div>
+                            <div id="south"onclick="openwindow('pakti.html')">ใต้</div>
+                        </div>
+                        <span>ช่วงเวลา</span>
+                        <div class="filters-child">
+                            <div id="morning" onclick="openwindow('morning.html')">อาหารเช้า</div>
+                            <div id="afternoon" onclick="openwindow('lunch.html')">อาหารกลางวัน</div>
+                            <div id="dinner" onclick="openwindow('evening.html')">อาหารเย็น</div>
+                        </div>
+                        <span>ประเภทอาหาร</span>
+                        <div class="filters-child">
+                            <div id="gang" onclick="openwindow('gang.html')">แกง</div>
+                            <div id="pad" onclick="openwindow('put.html')">ผัด</div>
+                            <div id="tom" onclick="openwindow('tom.html')">ต้ม</div>
+                            <div id="toon" onclick="openwindow('tun.html')">ตุ๋น</div>
+                            <div id="neung" onclick="openwindow('nung.html')">นึ่ง</div>
+                            <div id="tod" onclick="openwindow('tod.html')">ทอด</div>
+                            <div id="yum" onclick="openwindow('yum.html')">ยำ</div>
+                        </div>
+                    </div>
+                </i>
+            </button>
+            <button id="user">
+                <i class="fa-solid fa-user"></i>
+                <div id="control-box">
+                    <ul>
+                        <li id="setting" onclick="openwindow('setting.html')">setting<i class="fa-solid fa-gear" style="font-size: 15px;"></i></li>
+                        <li id="logout" onclick="openwindow('index.html')">logout<i class="fa-solid fa-arrow-right-from-bracket" style="font-size: 15px;"></i></li>
+                    </ul>
+                </div>
+            </button>  
+        </div>
+    </header>
+    <!-- header END -->
+
+    <!-- content -->
+    <div class="content-box">
+        <span style="margin-top: 20px; font-size: 20px;">หมูสโล่ง</span>
+        <span style="margin-top: 20px; font-size: 20px;">วิธีทำ “หมูสโล่ง” อาหารไทยโบราณ นิยมทานเป็นของว่าง ทำจากหมูบดละเอียด <p></p>ทำจากหมูบดละเอียด ทำกินได้ง่ายๆ!!!</span>
+        <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu14.jpg?raw=true" alt="หมูสโล่ง">
+        <div class="empty">
+            <div class="left"></div>
+            <div class="right">   
+                <i class="fa-solid fa-heart" style="font-size: 25px;" id="heart_full"></i>
+                <span style="font-size: 20px;" id="total_heart">0</span>
+            </div>
+            
+        </div>
+        <span style="margin-top: 20px; font-size: 15px; padding-left: 150px;padding-right: 150px;">
+            หมูสร่ง หรือ “หมูสโล่ง” หมูสับหมักพันด้วยเส้นหมี่เมนูดังจากละคร By Phorn Kitchen 
+            <br>
+            <br> </span>
+        <div id="ul-box">
+            <div class="speakbar">วัตถุดิบหมูสโล่ง</div>
+                <div class="next-ingredient">- หมูสับ 500 กรัม</div>
+                <div class="next-ingredient">- หมี่ซั่ว 250 กรัม</div>
+                <div class="next-ingredient">- รากผักชี 10 กรัม</div>
+                <div class="next-ingredient">- พริกไทยเม็ด 10 กรัม</div>
+                <div class="next-ingredient">- กระเทียม 30 กรัม</div>
+                <div class="next-ingredient">- น้ำปลา 1 ช้อนโต๊ะ</div>
+                <div class="next-ingredient">- ซอสปรุงรส 1 ช้อนโต๊ะ</div>
+                <div class="next-ingredient">- ไข่ไก่ 1 ฟอง</div>
+                <div class="next-ingredient">- น้ำมันสำหรับทอด</div>
+
+            <div class="speakbar">วิธีทำหมูสโล่ง</div>
+                <div class="next-ingredient">- โขลกรากผักชี+กระเทียม+พริกให้ละเอียด</div>
+                <div class="next-ingredient">- นำสามเกลอที่โขลกแล้วมาหมักกับหมูสับ ใส่ไข่+น้ำปลา+ซอสปรุงรส คลุกเคล้าส่วนผสมให้เข้ากัน หมักทิ้งไว้ 30 นาที</div>
+                <div class="next-ingredient">- นำหมี่ซั่วแช่น้ำ ให้เหยียบเส้นนุ่มแล้วเทน้ำออก ผึ่งให้สะเด็ดน้ำ</div>
+                <div class="next-ingredient">- เตรียมห่อหมู</div>
+                <div class="next-ingredient">- ปั้นหมูสับให้เป็นก้อนพอดีคำ แล้วใช้เส้นหมี่ 4 เส้นคลุกพันให้รอบหมู</div>
+                <div class="next-ingredient">- ทอดในน้ำมันร้อนจนหมูสุกเป็นสีเหลืองทอง</div>
+                <div class="next-ingredient">- ตั้งน้ำมันใช้ไฟกลาง และทอดจนหมูสุกเป็นสีเหลืองทอง โดยใช้น้ำมันท่วมๆ</div>
+                <div class="next-ingredient">- ทอดจนหมูสุกเป็นสีเหลืองทอง ตักเสิร์ฟพร้อมน้ำจิ้มไก่</div>
+
+        </div>
+        <iframe  src="https://www.youtube.com/embed/8eG85GuhQPE?si=B_AGKT-KaUblKtom" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="comment-background">
+            <div class="comment-text">
+                <div><span style="font-size: 20px; color: white; margin-left: 20px;">ความคิดเห็น</span>
+                    <span style="color: white;">(</span>
+                    <span style="color: white;" id="comment_number">1</span>
+                    <span style="color: white;">)</span>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div class="comment-box">
+                <div class="box">
+                    <div class="acc" >
+                        <img src="https://f.ptcdn.info/651/065/000/pwqxxro11zd1sdKXvgg-o.jpg" alt="user" id="pofile">
+                    </div>
+                    <div class="input-box">
+                        <p id="username">@usertest</p>
+                        <input type="text" placeholder="เพิ่มความคิดเห็น..." id="comment">
+                    </div>
+                </div>
+                <div class="comment-allbtn">
+                    <div></div>
+                    <div class="comment-buttom">
+                        <div id="cancel">ยกเลิก</div>
+                        <div id="submit">ส่งความคิดเห็น</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="all-comment-user">
+                <div class="comment-user">
+                    <div class="acc2">
+                        <img src="https://f.ptcdn.info/651/065/000/pwqxxro11zd1sdKXvgg-o.jpg" alt="user">
+                    </div>
+                    <div class="userinput-box">
+                        <p class="user">@Lisa</p>
+                        <p class="usercomment">เมนูน่าสนใจมากครับ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content END -->
+    <!-- footer -->
+    <footer>
+        <div class="left_footer">
+            <div id="location_box" onclick="openwindow('https://maps.app.goo.gl/3cPiz3temsYjUGEb7')">
+                <div><i class="fa-solid fa-location-dot"></i></div>
+                <span>19 ตำบลแม่กา <br>อำเภอเมืองพะเยา พะเยา 56000</span>
+            </div>
+            <div id="tel_box" onclick="openwindow('https://www.up.ac.th/')">
+                <div><i class="fa-solid fa-phone"></i></div>
+                <span>054 466 666</span>
+            </div>
+            <div id="email_box" onclick="openwindow('https://www.up.ac.th/')">
+                <div><i class="fa-regular fa-envelope"></i></div>
+                <span>support@up.ac.th</span>
+            </div>
+        </div>
+        <div class="Rigth_footer">
+            <div>
+                <h3>About the company</h3>
+                <p>เว็ปไซต์ที่แนะนำเมนูอาหารที่หลากหลายมากมาย<br>เหมาะสำหรับนิสิตและบุคคลทั่วไปที่พักอยู่ที่หอ<br>ต้องการที่จะทำอาหารรัปทานเองได้ง่ายๆแนะนำ<br>เว็บไวต์TAMROIที่จะช่วยให้ได้เมนูอาหารที่น่าสนใจ</p>
+                <hr>
+                <div class="contact">
+                    <div><i class="fa-brands fa-facebook"></i></div>
+                    <div><i class="fa-brands fa-x-twitter"></i></div>
+                    <div><i class="fa-brands fa-line"></i></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer End -->
+    <script src="menu.js"></script>
+</body>
+</html>
